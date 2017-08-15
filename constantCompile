@@ -12,4 +12,5 @@ while true; do
 	done
 	pdflatex "$1" > /dev/null;
 	oldHash=$newHash;
+	echo -ne '\007';
 done
