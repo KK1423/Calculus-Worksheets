@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo ${1:?"Needs file as argument"}>/dev/null;
+
+oldHash=$(md5sum "$1");
+newHash=oldHash;
+while true; do
+	while ["$oldHash"=="$newHash"]; do
+		sleep 1;
+		newHash=$(md5sum "$1");
+	done
+	pdflatex "$1" > /dev/null;
+	oldHash=newHash;
+done
