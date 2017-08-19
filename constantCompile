@@ -10,7 +10,7 @@ while true; do
 		sleep 1;
 		newHash=$(md5sum "$1");
 	done
-	pdflatex "$1" > /dev/null;
+	pdflatex -interaction=nonstopmode "$1";
 	oldHash=$newHash;
 	echo -ne '\007';
 done
