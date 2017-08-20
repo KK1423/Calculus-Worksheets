@@ -1,6 +1,6 @@
 \documentclass[letterpaper,12pt]{article}
 %\documentclass[letterpaper,12pt,answers]{exam}
-\usepackage{txfonts,multicol, fullpage}
+\usepackage{txfonts,multicol, fullpage, enumitem}
 \usepackage{graphicx}
 %\usepackage{../../../../std}
 %\setlength{\voffset}{-0.5 in}
@@ -63,39 +63,59 @@ Objective 3 & Calculate solids of revolution with the &1\qquad 2\qquad 3 \qquad 
 \bigskip\bigskip
 
 \centerline{\bf \large Warmup}
-\noindent Evaluate the folowing integrals. (By yourself)
-\begin{enumerate}\begin{multicols}{3}
-\item $\ds \int e^{x}\sin(x) dx$
-\item $\ds \int -\frac{\ln(x)}{x^2} dx$
-\item $\ds \int _{2}^{3} -\frac{\sin(\ln(x))}{x} dx$
+\noindent Write, but do not evaluate, an expression that finds the volume formed by revolving these regions around these lines. (By yourself)
+\begin{enumerate}
+\item {The region under $y=-x^2+4$ in the first quadrant
+\enumerate[label=(\alph*)]{
+\begin{multicols}{3}
+\item {The x-axis.}
+\item {The y-axis.}
+\item {$\ds x=2$}
 \end{multicols}
+}
+}
+
+\item {The region, in the first quadrant, below $y=x^3$ and to the left of $x=3$
+\enumerate[label=(\alph*)]{
+\begin{multicols}{3}
+\item {The x-axis.}
+\item {The y-axis.}
+\item {$\ds x=5$}
+\end{multicols}
+}
+}
 \end{enumerate}
 
+\bigskip
 \centerline{\bf \large Problems}
-\noindent These problems involve the disk method. You may reference Example 205 in your example packet. (In groups)
+\noindent These problems involve the disk method and the washer method. You may reference Examples 205 and 207 in your example packet. (In groups)
 \begin{enumerate}
-\item Find the volume of a right cylinder with a radius of 5 and height of 10 using the disk method. 
-\item Find the volume, of the cone from the last problem, that is less than 5 units above the base of the cone.
-\item Find the volume of a solid formed by revolving the curve $ x = \sin(y) + y $ around the y-axis, bounded by $ y = 0 $ and $ y = 2\pi $.
+\item Find the volume of a solid formed by revolving the curves $ x = \sin(y) + y $ and $ x = \sin(y) + 0.5\cdot y $ around the y-axis, bounded by $ y = 0 $ and $ y = 2\pi $.
 
+\item {Consider the region between the curves $ y = x^2 $, $x=1$ and $\ds y=0 $. Find the volume of the solid formed by revolving this region about the following lines.
+\enumerate[label=(\alph*)]{
+\begin{multicols}{7}
+\item{$y=0$}
+\item{$x=0$}
+\item{$x=1$}
+\item{$y=1$}
+\item{$x=2$}
+\item{$y=2$}
+\item{$y=-1$}
+\end{multicols}
+}
+}
 \end{enumerate}
 
-\noindent These problems involve the washer method. You may reference Example 207 in your example packet. (In groups)
-\begin{enumerate}
-\item Given that the solid in the last problem was actually hollow, and had an inner wall defined by revolving the curve $ x = \sin(y) + 0.5\cdot y $, find its volume.
-\item Consider the region between the curves $ y = x^2 $ and $\ds y = \frac{x^2}{4} + 3 $. Find the volume of the solid formed by revolving this region about the x-axis.
-
-\end{enumerate}
-
+\bigskip
+\bigskip
 \centerline{\bf \large Self Quiz}
 \centerline{(By yourself)}
 \begin{enumerate}
-\item Find the general formula for the volume of a cone by writing and evaluating an integral using the disk method. The formula should be in terms of $r$, the radius of the cone at its base, and $h$, the height of the cone.
-\item Find the general formula for the volume of a square pyramid by writing and evaluating an integral. The formula should be in terms of $s$, the side length of the base, and $h$.
+\item Use the regions described in the Warm Up section and then revolve them around the line $y=4$. Find the volumes of the solids formed.
 \end{enumerate}
 
-
-\vskip 2 in
+\bigskip
 
 \centerline{\large \bf Reflection}
 % this can be copied from the top of the worksheet
